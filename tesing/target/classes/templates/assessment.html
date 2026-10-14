@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Assessment - Student Skill Gap Analyzer</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; padding: 40px; display: flex; justify-content: center; }
+        .assessment-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
+        h2 { color: #1f77b4; text-align: center; margin-bottom: 10px; }
+        p { text-align: center; color: #666; margin-bottom: 25px; }
+        .skill-group { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .skill-option { display: flex; align-items: center; margin-bottom: 8px; cursor: pointer; }
+        .skill-option input { margin-right: 12px; transform: scale(1.2); }
+        .skill-label { font-size: 16px; color: #333; }
+        .btn { width: 100%; padding: 12px; background-color: #2ca02c; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; font-weight: bold; }
+        .btn:hover { background-color: #217d22; }
+    </style>
+</head>
+<body>
+
+<div class="assessment-card">
+    <h2>Select Your Skills</h2>
+    <p>Choose the core technical areas you have experience with to calculate your gap score.</p>
+    
+    <form action="dashboard.html" method="GET">
+        <div class="skill-group">
+            <label class="skill-option">
+                <input type="checkbox" id="skill_java" name="skills" value="Java">
+                <span class="skill-label">Java Programming Language</span>
+            </label>
+            <label class="skill-option">
+                <input type="checkbox" id="skill_selenium" name="skills" value="Selenium">
+                <span class="skill-label">Selenium WebDriver UI Automation</span>
+            </label>
+            <label class="skill-option">
+                <input type="checkbox" id="skill_sql" name="skills" value="SQL">
+                <span class="skill-label">SQL Structured Database Management</span>
+            </label>
+            <label class="skill-option">
+                <input type="checkbox" id="skill_springboot" name="skills" value="SpringBoot">
+                <span class="skill-label">Spring Boot Framework Architecture</span>
+            </label>
+        </div>
+        
+        <button type="submit" class="btn">Analyze Skill Gap Now</button>
+    </form>
+</div>
+
+</body>
+</html>
